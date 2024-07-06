@@ -32,9 +32,12 @@ async def main():
     test = Text()
     await test.setMode(
         "Franz jagt im völlig verwahrlosten Taxi quer durch München?",
-        font_path="./fonts/JetbrainsMonoRegular-RpvmM.ttf",
+        font_path="C:/Windows/fonts/consola.ttf",
         font_size=24,
         speed=95,
+        text_color=(0, 255, 25),
+        text_bg_mode=1, # 0=off (black), 1=color
+        text_bg_color=(10, 10, 10),
     )
     time.sleep(5)
 
